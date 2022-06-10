@@ -1,3 +1,68 @@
-h1 {
-  color: red;
+/* ======================== COMMON ======================== */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+nav, 
+footer, 
+header {
+  display: block;
+}
+input, 
+button, 
+textarea {
+  font-family: inherit;
+}
+
+[class*="__container"] {
+  max-width: 612px;
+  margin: 0px auto;
+  padding: 0px 16px;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #222222;
+  font-size: 10px;
+  line-height: 110%;
+}
+
+/* ======================== HEADER ======================== */
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.nav {
+  padding: 30px 0;
 }
