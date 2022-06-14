@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>CV</title>
 </head>
 <body>
@@ -23,13 +27,13 @@
         <section class="about">
             <div class="about_text-content">
                 <h1 id="about" class="h1">Anna Shipilova</h1>
-                <h2 class="h2 h2-gradient">Junior Frontend devloper & UX-explorer</h2>
-                <p>Hi! I’m 27 y/o June FrontEnd developer from Saint-Petersburg</p>
-                <div class="about__icons">
-                    <p class="about__icon"><a href="" target="_blank"><img src="./assets/mail-icon.svg" alt="mail icon">ann.shplv@gmail.com</a></p>
-                    <p class="about__icon"><a href="https://www.linkedin.com/in/anna-shipilova-667426235/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="linkedin icon">anna-shipilova</a></p>
-                    <p class="about__icon"><a href="https://github.com/annshplv" target="_blank"><img src="./assets/github-icon.svg" alt="Github icon">annshplv</a></p>
-                </div>
+                <h2 class="h2 gradient">Junior Frontend devloper & UX-explorer</h2>
+                <p>Hi! I’m 27 y/o Junior FrontEnd developer from Saint-Petersburg</p>
+                <ol class="about__icons">
+                    <li class="about__icon"><a href="" target="_blank"><img src="./assets/mail-icon.svg" alt="mail icon">ann.shplv@gmail.com</a></li>
+                    <li class="about__icon"><a href="https://www.linkedin.com/in/anna-shipilova-667426235/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="linkedin icon">anna-shipilova</a></li>
+                    <li class="about__icon"><a href="https://github.com/annshplv" target="_blank"><img src="./assets/github-icon.svg" alt="Github icon">annshplv</a></li>
+                </ol>
             </div>
             <div class="about_img-content">
                 <img class="about_img" src="./assets/selfie.jpeg" alt="selfie" width="115" height="115">
@@ -37,10 +41,83 @@
         </section>
     </header>
 
-    <main class="main__container">
+    <div class="wrapper main__container">
+        <main>
+            <section class="examples">
+                <h2 class="h2">Code examples:</h2>
+<pre><code>
+const countChars = (str, char) => {
+  let i = 0;
+  let count = 0;
+  while (i &lt; str.length) {
+    if (str[i].toLowerCase() === char.toLowerCase()) {
+    count += 1;
+    };
+    i = i + 1;
+    };
+    
+    return count;
+};
+</code></pre>
+            </section>
 
-    </main>
+            <section class="project" id="experience">
+                <h2 class="h2">Project examples:</h2>
+                <div class="project__mortal-kombat">
+                    <p class="project__icon subtitle"><a href="https://github.com/annshplv/Mortal-Kombat/tree/main" target="_blank">Mortal Kombat<img src="./assets/link.svg" alt="link icon"></a></p>
+                    <p class="subtitle">An imitation of the popular Mortal Kombat game.</p>
+                    <p class="subtitle">Javascript. HTML. CSS.</p>
+                </div>
+            </section>
+        </main>
 
-    <footer class="contacts"></footer>
+        <aside>
+            <section class="skills" id="skills">
+                <h2 class="h2">Skills:</h2>
+                <ol>
+                    <li class="skills_item">HTML5, CSS3;</li>
+                    <li class="skills_item">Javascript;</li>
+                    <li class="skills_item">Git, Github;</li>
+                    <li class="skills_item">SASS;</li>
+                    <li class="skills_item">BEM;</li>
+                    <li class="skills_item">Webpack;</li>
+                </ol>
+            </section>
+
+            <section class="languages">
+                <h2 class="h2">Languages:</h2>
+                <ol>
+                    <li>Russian - native speaker;</li>
+                    <li>English - A2;</li>
+                </ol>
+            </section>
+
+            <section class="education" id="education">
+                <h2 class="h2">Education:</h2>
+                <div><ol>
+                    <li><p class="gradient">2013 - 2017</p>
+                        <h3 class="h3">Peter the Great St.Petersburg Polytechnic University (SPbPU)</h3>
+                    </li>
+                        <li class="subtitle">International Management</li>
+                    <li><p class="gradient">2021 - until now</p>
+                        <h3 class="h3">Hexlet</h3>
+                    <ul>
+                        <li class="subtitle">Layout designer</li>
+                        <li class="subtitle">Frontend developer</li>
+                    </ul>
+                    <li><p class="gradient">2021 - until now</p>
+                        <h3 class="h3">THE ROLLING SCOPES SCHOOL</h3></li>
+                    </ol></div>
+            </section>
+        </aside>
+    </div>
+
+    <footer id="contacts" class="footer__container">
+        <div class="footer_list">
+            <p><a href="https://github.com/annshplv" target="_blank"><img src="./assets/github_logo.svg" alt=logotipeGitHub width="60" height="60"></a></p>
+            <p>2022</p>
+            <p><a href="https://rs.school/js/" target="_blank"><img src="./assets/rs_school.svg" alt="logotipeRSSchool" width="80" height="80"></a></p>
+        </div>
+    </footer>
 </body>
 </html>
