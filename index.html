@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <title>CV Shipilova Ann</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#About" class="menu__list">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#Skills" class="menu__list">Skills</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#Projects" class="menu__list">Projects</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#Education" class="menu__list">Education</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main__container">
+                <section id="About" class="about">
+                    <div class="about__text">
+                        <h1 class="h1">Anna Shipilova</h1>
+                        <h2 class="h2 title-gradient">Junior Frontend devloper & UX-explorer</h2>
+                        <p>Hi! I’m 27 y/o Junior FrontEnd developer from Saint-Petersburg. <br> I am interested in learning new technologies to make the user experience better.</p>
+
+                        <ol class="about__list">
+                            <li class="about__item"><a class="item" href="" target="_blank"><img src="./assets/icon/logo_mail.svg" alt="mail icon">ann.shplv@gmail.com</a></li>
+                            <li class="about__item"><a class="item" href="https://www.linkedin.com/in/anna-shipilova-667426235/" target="_blank"><img src="./assets/icon/logo_linkedin.svg" alt="linkedin icon">anna-shipilova</a></li>
+                            <li class="about__item"><a class="item" href="https://github.com/annshplv" target="_blank"><img src="./assets/icon/logo_github.svg" alt="Github icon">annshplv</a></li>
+                        </ol>
+                    </div>
+                    <div class="about__img">
+                        <img class="img" src="./assets/img/selfie.jpeg" alt="selfie" width="125" height="125">
+                    </div>
+                </section>
+
+                <section class="content">
+                    <div class="content__left">
+                        <div class="code-example">
+                            <h2 class="h2">Code example:</h2>
+<pre><code>
+const countChars = (str, char) => {
+    let i = 0;
+    let count = 0;
+    while (i &lt; str.length) {
+        if (str[i].toLowerCase() === char.toLowerCase()) {
+        count += 1;
+    };
+    i = i + 1;
+    };
+                                    
+    return count;
+};
+</code></pre>
+                        </div>
+                        <div id="Projects" class="content__projects">
+                            <h2 class="h2">Projects:</h2>
+                            <div class="project-CV project">
+                                <div class="project__title">
+                                    <h3 class="h3 text-decor"><a href="https://github.com/annshplv/CV" target="_blank">CV</a></h3>
+                                    <img src="./assets/icon/logo_link-outlined.svg" alt="outlined">
+                                </div>
+                                <p>The task of this project is to compose your own SV.</p>
+                                <p><b> Stack:</b> HTML5, CSS3, Git, Github, Figma</p>
+                                <p class="text_scale"><a href="https://annshplv.github.io/CV/" target="_blank">Click for start!</a></p>
+                            </div>
+
+                            <div class="project-kombat project">
+                                <div class="project__title">
+                                    <h3 class="h3 text-decor"><a href="https://github.com/annshplv/Mortal-Kombat/tree/main" target="_blank">Mortal Kombat</a></h3>
+                                    <img src="./assets/icon/logo_link-outlined.svg" alt="outlined">
+                                </div>
+                                <p>This project is an imitation of the popular Mortal Kombat game.</p>
+                                <p> <b> Stack:</b> HTML5, CSS3, Javascript(ES6), Git, Github</p>
+                                <p class="text_scale"><a href="https://annshplv.github.io/Mortal-Kombat/ " target="_blank">Click for start!</a></p>
+                            </div>
+                        </div>
+                        <div id="Education" class="content__educations">
+                            <h2 class="h2">Education:</h2>
+                            <div class="education">
+                                <h3><a class="h3 title-gray" href="https://www.udemy.com/course/javascript-ru/?couponCode=JSRUNOV2022" target="_blank">Udemy</a></h3>
+                                <h4 class="h4 title-gradient">September 2022 - October 2022</h4>
+                                <p>JavaScript - Полный Курс По JavaScript</p>
+                            </div>
+                            <div class="education">
+                                <h3><a class="h3 title-gray" href="https://app.rs.school/certificate/x6dipbnh" target="_blank">THE ROLLING SCOPES SCHOOL</a></h3>
+                                <h4 class="h4 title-gradient">December 2021 - March 2022</h4>
+                                <p>JS/FE PRE-SCHOOL 2022 (JAVASCRIPT)</p>
+                            </div>
+                            <div class="education">
+                                <h3><a class="h3 title-gray" href="https://english.spbstu.ru/" target="_blank">Peter the Great St.Petersburg <br> Polytechnic University (SPbPU)</a></h3>
+                                <h4 class="h4 title-gradient">September 2013 - June 2017</h4>
+                                <p>International Management</p>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="content__right">
+                        <div id="Skills" class="content__skills">
+                            <h2>Skills:</h2>
+                            <ol class="skills__list list">
+                                <li class="skillls__items">HTML5, CSS3;</li>
+                                <li class="skillls__items">Javascript (ES6);</li>
+                                <li class="skillls__items">Git, Github;</li>
+                                <li class="skillls__items">SASS, SCSS</li>
+                                <li class="skillls__items">BEM;</li>
+                                <li class="skillls__items">Webpack;</li>
+                                <li class="skillls__items">Bootstrap</li>
+                            </ol>
+                        </div>
+                        <div class="content__languages">
+                            <h2>Languages:</h2>
+                                <ol class="languages_list list">
+                                    <li class="languages__items">Russian - native speaker;</li>
+                                    <li class="languages__items"> English - A2;</li>
+                                </ol>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">  
+            <div class="footer__container footer-block">
+                <p><a href="https://github.com/annshplv" target="_blank"><img src="./assets/icon/github_logo.svg" alt="logotipeGitHub" width="60" height="60"></a></p>
+                <p>© 2022</p>
+                <p><a href="https://rs.school/js/" target="_blank"><img src="./assets/icon/rs_school.svg" alt="logotipeRSSchool"  width="60" height="60"></a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
